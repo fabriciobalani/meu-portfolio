@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Menu } from '../menu/menu';
-import { UrlCodec } from '@angular/common/upgrade';
+import { MenuModel } from '../models/menu';
+
 
 @Injectable({
   providedIn: 'root',
 })
 export class MenuService {
 
-  getItems(): Array<Menu> {
+  getItems(): Array<MenuModel> {
 
-    const menu: Array<Menu> = [
+    const menu: Array<MenuModel> = [
       {
         name: 'Início',
         url: '#banner'

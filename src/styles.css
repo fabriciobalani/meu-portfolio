@@ -23,5 +23,9 @@
     --color-pink:  #f42771;
 
     --color-black-1: #181818; 
+}
 
+a {
+    text-decoration: none;
+    color: inherit;        
 }
