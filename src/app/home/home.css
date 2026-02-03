@@ -85,19 +85,29 @@
     flex: 2;
 }
 
+.about .box .text h2 {
+    margin: 5px 0 20px;
+    font-size: var(--font-size-2);
+    padding: 0 20px;
+}
+
+
 .about .box .text h3 {
     color: var(--color-blue-2);
     margin-top: 15px;
+    padding: 0 20px;
 }
 
 .about .box .text p {
     margin: 15px 0;
     text-align: justify;
+    padding: 0 20px;
 }
 
 .about .box .text a {
     color: var(--color-pink);
     font-weight: 600;
+    padding: 0 20px;
 }
 
 .container {
@@ -152,6 +162,78 @@
     margin-top: 15px;
 }
 
+/* box projects */
+.projects .box h2 {    
+    font-size: var(--font-size-2);
+    padding: 0 20px;
+}
+
+
+.projects .box h3 {
+    font-size: var(--font-size-4);
+    padding: 20px;
+}
+
+.projects .box .project {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.projects .box .project.reverse {
+    flex-direction: column-reverse;
+}
+
+.projects .box .project .img {
+    flex: 1;
+}
+
+.projects .box .project .text {
+    flex: 1;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.projects .box .project .text h4{
+    font-size: var(--font-size-3);
+    margin-bottom: 15px;
+}
+
+.projects .box .project .text .buttons {
+    margin-top: 20px;
+    display: flex;
+}
+
+.projects .box .project .text .buttons a {
+    display: inline-flex;
+    border-radius: 45px;
+    color: #fff;
+    height: 30px;
+    background: #181616;
+    margin-right: 15px;
+    padding: 0 12px;
+    font-size: var(--font-size-5);
+    font-weight: 400;
+    align-items: center;
+}
+
+.projects .box .project .text .buttons a.live {
+    background: var(--color-pink);
+}
+
+.projects .box .project .text .buttons a svg,
+.projects .box .project .text .buttons a i {
+    width: 20px;
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.projects .box .project .img img {
+    width: 100%;
+}
+
+
+
 
 @media (min-width: 768px) {
     .about .box {
@@ -172,7 +254,16 @@
 
     .skills .box .items .skill img,
     .skills .box .items .skill svg {
-        width: 120px;        
+        width: 120px;
+    }
+
+    .projects .box .project, 
+    .projects .box .project.reverse  {
+        flex-direction: row;
+    }
+
+    .projects .box .project .text {
+        padding-top: 75px;
     }
 
 
