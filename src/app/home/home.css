@@ -68,11 +68,14 @@
 .about .box {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
+    padding-top: 100px;
 }
 
 .about .box .img {
     flex: 1;
     margin: 0 auto 20px;
+    padding: 10px;
 
 }
 
@@ -119,6 +122,7 @@
 
 .skills {
     background: var(--color-black-1);
+    padding-top: 100px;
 }
 
 .skills .box h2,
@@ -163,6 +167,11 @@
 }
 
 /* box projects */
+
+.projects {
+    padding-top: 100px;
+}
+
 .projects .box h2 {    
     font-size: var(--font-size-2);
     padding: 0 20px;
